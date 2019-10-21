@@ -4,11 +4,6 @@ require('express-group-routes')
 
 const app = express()
 app.use(bodyParser.json())
-app.listen(process.env.PORT || 9876, function(){ 
-    console.log ('Listening on our Port!')
-})
-
-app.use(bodyParser.json())
 
 //controllers
 const AuthController = require('./controllers/auth')
@@ -57,6 +52,10 @@ app.group("/api/v1", (router) => {
     router.get('/user/:user_id/webtoon/:webtoon_id/episode/:episode_id/images', authenticated, DetailEpisodeController.getImages)
     router.post('/user/:user_id/webtoon/:webtoon_id/episode/:episode_id/image', authenticated, DetailEpisodeController.createMyEpisode)
     router.delete('/user/:user_id/webtoon/:webtoon_id/episode/:episode_id/image/:image_id', authenticated, DetailEpisodeController.deleteImage) 
+})
+
+app.listen(process.env.PORT || 9876, function(){ 
+    console.log ('Listening on our Port!')
 })
 
 
