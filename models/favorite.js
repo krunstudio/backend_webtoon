@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const user = sequelize.define('favorite', {
+  const favorite = sequelize.define('favorite', {
     webtoon_id: DataTypes.INTEGER,
     user_id: DataTypes.INTEGER,
     createdAt : new Date(),
