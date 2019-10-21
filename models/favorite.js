@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     createdAt : new Date(),
     updatedAt : new Date()
   }, {});
-  user.associate = function(models) {
+  favorite.associate = function(models) {
     // associations can be defined here
   };
   return favorite;
