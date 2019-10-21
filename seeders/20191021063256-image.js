@@ -5,7 +5,7 @@ module.exports = {
       return queryInterface.bulkInsert('images', [{
         page: '1',
         image: 'image 1',
-        webtoon_id: 1,
+        webtoon_id: 4,
         episode_id: 1,
         user_id: 1,
         createdAt : new Date(),
@@ -14,7 +14,7 @@ module.exports = {
       {
         page: '2',
         image: 'image 2',
-        webtoon_id: 1,
+        webtoon_id: 4,
         episode_id: 1,
         user_id: 1,
         createdAt : new Date(),
