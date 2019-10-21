@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.bulkInsert('episodes', [{
       title: 'Episodes Pertama',
       image: 'https://www.forbes.com/sites/joanmacdonald.jpg',
-      webtoon_id: 1,
+      webtoon_id: 4,
       user_id: 1,
       createdAt : new Date(),
       updatedAt : new Date()
@@ -13,7 +13,7 @@ module.exports = {
   {
     title: 'Episodes Kedua',
     image: 'https://www.forbes.com/sites/joanmacdonald.jpg',
-    webtoon_id: 1,
+    webtoon_id: 4,
     user_id: 1,
     createdAt : new Date(),
     updatedAt : new Date()
