@@ -60,4 +60,3 @@ app.group("/api/v1", (router) => {
 })
 
 
-app.listen(port, () => console.log(`Listening on port ${port}!`))
