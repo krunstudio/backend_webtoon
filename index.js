@@ -13,7 +13,6 @@ const DetailEpisodeController = require('./controllers/detailEpisodes')
 
 //middlewares
 const { authenticated } = require('./middleware')
-router.get('/', 'Hello!')  
 app.group("/api/v1", (router) => {
 
     //auth API
