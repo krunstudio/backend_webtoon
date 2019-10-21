@@ -3,7 +3,10 @@ const bodyParser = require('body-parser')
 require('express-group-routes')
 
 const app = express()
-const port = 5000;
+app.use(bodyParser.json())
+app.listen(process.env.PORT || 9876, function(){ 
+    console.log ('Listening on our Port!')
+})
 
 app.use(bodyParser.json())
 
