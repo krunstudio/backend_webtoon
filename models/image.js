@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const user = sequelize.define('image', {
+  const image = sequelize.define('image', {
     page: DataTypes.STRING,
     image: DataTypes.STRING,
     webtoon_id: DataTypes.INTEGER,
@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     createdAt : new Date(),
     updatedAt : new Date()
   }, {});
-  user.associate = function(models) {
+  image.associate = function(models) {
     // associations can be defined here
   };
   return image;
